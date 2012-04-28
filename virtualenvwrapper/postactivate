@@ -1,0 +1,9 @@
+proj_name=${VIRTUAL_ENV##*/}
+cd $HOME/projects/$proj_name
+
+PATH=$PATH:$HOME/projects/$proj_name/bin
+export PATH
+PYTHONPATH=$HOME/projects/$proj_name
+export PYTHONPATH
+
+export DJANGO_COLORS="light"
