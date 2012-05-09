@@ -1,3 +1,4 @@
+#!/bin/sh
 ################################################################################################
 # Much of the insight for these was gained from Secrets.prefpane (http://secrets.blacktree.com/)
 # or from Mathias Bynens (https://github.com/mathiasbynens/dotfiles/blob/master/.osx)

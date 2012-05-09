@@ -1,3 +1,5 @@
+#!/bin/sh
+
 # Install Homebrew
 if [ ! -f /usr/local/bin/brew ]; then
   /usr/bin/ruby -e "$(/usr/bin/curl -fsSL https://raw.github.com/mxcl/homebrew/master/Library/Contributions/install_homebrew.rb)"
