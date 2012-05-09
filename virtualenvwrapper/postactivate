@@ -1,9 +1,26 @@
-proj_name=${VIRTUAL_ENV##*/}
-cd $HOME/projects/$proj_name
+#!/bin/bash
+# This hook is run after every virtualenv is activated.
 
-PATH=$PATH:$HOME/projects/$proj_name/bin
+proj_name=${VIRTUAL_ENV##*/}
+
+if [ ! -d "$PROJECT_HOME/$proj_name" ]; then
+  cd $PROJECT_HOME
+  return
+fi
+
+cd $PROJECT_HOME/$proj_name
+PATH=$PATH:$PROJECT_HOME/$proj_name/bin
 export PATH
-PYTHONPATH=$HOME/projects/$proj_name
+PYTHONPATH=$PROJECT_HOME/$proj_name
 export PYTHONPATH
 
+# Django helpers
 export DJANGO_COLORS="light"
+alias dj='python manage.py'
+alias djr='dj runserver'
+alias djrp='dj runserver_plus'
+alias djdb='dj dbshell'
+alias djs='dj shell'
+alias djsp='dj shell_plus'
+alias djt='dj test'
+alias djsm='dj startmigration'

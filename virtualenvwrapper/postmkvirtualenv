@@ -1,5 +1,3 @@
-proj_name=${VIRTUAL_ENV##*/}
-mkdir -p $HOME/projects/$proj_name/$proj_name
-mkdir -p $HOME/projects/$proj_name/docs
-touch $HOME/projects/$proj_name/README
-cd $HOME/projects/$proj_name/$proj_name
+#!/bin/bash
+# This hook is run after a new virtualenv is activated.
+
