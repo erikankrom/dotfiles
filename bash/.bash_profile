@@ -12,7 +12,7 @@ done
 unset file
 
 # Load ~/.bash_extra, can be used for settings you don’t want to commit
-source ~/.bash_extra
+#source ~/.bash_extra
 
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob
