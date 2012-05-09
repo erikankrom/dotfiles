@@ -1,3 +1,5 @@
+#!/bin/bash
+
 alias reload=". ~/.bash_profile"
 
 # Easier navigation: .., ..., ~ and -

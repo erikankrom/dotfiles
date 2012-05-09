@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
+  export WORKON_HOME=$HOME/.virtualenvs
+  export PROJECT_HOME=$HOME/Projects
+  export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
+  export VIRTUALENVWRAPPER_HOOK_DIR=$HOME/Projects/dotfiles/virtualenvwrapper/
+  export PIP_VIRTUALENV_BASE=$WORKON_HOME
+  export PIP_RESPECT_VIRTUALENV=true
+  source /usr/local/bin/virtualenvwrapper.sh
+fi
